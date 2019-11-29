@@ -1,0 +1,194 @@
+/*** Styling ***/
+/*** Site Colors ***
+
+pale-grey: #fafbfc
+pale-grey-two: #dbe2e8
+dark: #2e3d49
+bluegrey: #7d97ad
+aquamarine: #02ccba
+
+*/
+
+/* CSS Variables */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fafbfc;
+    color: #2e3d49;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    line-height: 1.1;
+    margin: 5px 0;
+    padding: 5px;
+    /* border: 1px solid #999; */
+}
+
+/*** Main Container Styling ***/
+.container {
+    margin: auto;
+    background:#fafbff;
+    /* max-width: 1600px; */
+}
+
+/*** Header Styling ***/
+.header {
+    background-image: url('../img/headerimage.jpg');
+    background-position: 50% 75%;
+    background-size: cover;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 2rem;
+    min-height: 25vh;
+}
+
+h1 {
+    letter-spacing: 8px;
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px white;
+}
+
+h1::after {
+    border: 5px solid #02ccba;
+    border-radius: 50%;
+    content: '';
+    height: 15px;
+    width: 15px;
+    position: absolute;
+}
+
+/* Navigation */
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+  background: var(--primary);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+/*** Article Styling ***/
+headerArt{
+  color: #2e3d49
+}
+time {
+    color: #7d97ad;
+}
+
+.img {
+    height: 0.1%;
+    width: 0.1%;
+}
+
+.read-more {
+    color: #02ccba;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.read-more::after {
+    content: '►';
+    position: relative;
+    left: 5px;
+    font-size: 30%;
+    top: -1px;
+}
+
+/*** Footer Styling ***/
+.footer {
+  border-top: 2px solid #dbe2e8;
+  margin-top: 2em;
+  padding: 2em;
+  text-align: center;
+  background: #7d97ad;
+  /* background-size:contain; */
+}
+/*** Sidebar Styling ***/
+.sidebar{
+ border-top: 3px solid #dbe2e8;
+ margin-top: 2em;
+ padding-top: 2em;
+ background-color: bluegrey;
+ /* background-color: #c1c0c0; */
+}
+.social-link {
+    display: inline-block;
+    margin-right: 0.75em;
+}
+/*** Form Styling ***/
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+/*** Helper Classes ***/
+
+/* from the HTML5 Boilerplate project for hidden, but accessible headings: https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css#L126-L145 */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
