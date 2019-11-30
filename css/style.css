@@ -74,7 +74,7 @@ h1 {
     position: relative;
     text-transform: uppercase;
     text-shadow: 1px 1px 20px white;
-    color:black;
+    color:#000000;
     text-decoration:underline;
 }
 
@@ -114,6 +114,10 @@ h1::after {
 }
 
 /*** Article Styling ***/
+.content{
+  border-right: 3px solid #dbe2e8;
+  background-size: cover;
+}
 headerArt{
   color: #2e3d49
 }

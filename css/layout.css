@@ -1,14 +1,8 @@
 /*** Page Content Layout ***/
 .container{
-    /* Step 1: Set display to grid */
+
       display:grid;
       margin:auto;
-
-      /* height: 90vh; */
-   /* Step 2: setup rows amd columns */
-      /* grid-template-columns: repeat(3, 1fr); */
-      /* grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 250px 600px; */
       grid-template-areas:
       "hd"
       "main"
@@ -16,21 +10,11 @@
       "ft";
       align-items:center;
       justify-content: center;
-      border: 2px solid yellow;
+      /* border: 2px solid yellow; */
 
 
   }
-  /* .nestedGrid{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-gap: 1px;
-    border: 5px solid black;
-  }
 
-  .nestedGrid > *{
-    border: 2px solid aquamarine;
-  } */
   .box{
      display: flex;
      flex-direction: column;
@@ -69,7 +53,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-size:cover;
-    /* border: 5px solid black; */
+    /* border: 1px solid black; */
     justify-content:space-around;
 
   }
@@ -107,7 +91,7 @@
       "hd hd hd hd hd hd hd hd"
       "main main main main main main main sd"
       "ft ft ft ft ft ft ft ft";
-      border: 5px solid red;
+      /* border: 5px solid red; */
       justify-content: center;
       align-items:center;
     }
@@ -118,7 +102,7 @@
   .container{
     display: grid;
     margin: auto;
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     grid-template-areas:
     "hd hd hd hd hd hd hd hd"
     "main main main main main main sd sd"
