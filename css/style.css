@@ -59,20 +59,23 @@ p {
 
 /*** Header Styling ***/
 .header {
-    background-image: url('../img/headerimage.jpg');
+    background-image: url('../img/headerimage1.jpg');
     background-position: 50% 75%;
     background-size: cover;
     text-align: center;
     padding: 1em;
     margin-bottom: 2rem;
     min-height: 25vh;
+    text-decoration-color: blue;
 }
 
 h1 {
     letter-spacing: 8px;
     position: relative;
     text-transform: uppercase;
-    text-shadow: 0 0 1px white;
+    text-shadow: 1px 1px 20px white;
+    color:black;
+    text-decoration:underline;
 }
 
 h1::after {
