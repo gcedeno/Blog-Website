@@ -1,6 +1,7 @@
 @import url("./normalize.min.css");
+@import url("./style.css"); 
 @import url("./blog-post.css");
-/* @import url("./header.css"); */ 
+
 
 .featured__post {
   position: relative;
